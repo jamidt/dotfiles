@@ -1,0 +1,12 @@
+[user]
+	name = Jan Schmidt
+[core]
+
+[merge]
+    tool = gvimdiff
+[diff]
+    tool = gvimdiff
+[core]
+	editor = gvim -f
+[push]
+	default = simple

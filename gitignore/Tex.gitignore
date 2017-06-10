@@ -1,0 +1,49 @@
+# latex tmp files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+
+# bibtex/biblatex/biber tmp-files
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+# Synctex and latexmk
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+# glossaries
+*.alg
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.slg
+*.slo
+*.sls
+
+# Do not include pdf/ps/eps/dvi in root directory
+/*.pdf
+/*.ps
+/*.eps
+/*.dvi
+
+# xindy
+*.xdy
