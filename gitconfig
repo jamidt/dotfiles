@@ -9,4 +9,4 @@
 [core]
 	editor = gvim -f
 [push]
-	default = simple
+	default = upstream
