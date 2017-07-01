@@ -1,7 +1,5 @@
 [user]
 	name = Jan Schmidt
-[core]
-
 [merge]
     tool = gvimdiff
 [diff]
@@ -9,4 +7,6 @@
 [core]
 	editor = gvim -f
 [push]
-	default = upstream
+    default = upstream
+[alias]
+    lg = log --graph --decorate --all --format=format:'%C(cyan)%h%C(white): %s %C(dim yellow)%d'
