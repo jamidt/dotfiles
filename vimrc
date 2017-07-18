@@ -108,7 +108,7 @@ set softtabstop=4
 set tabstop=4
 "set shiftwidth=4
 
-" Smartindent automatically inserts one extra level of indentaton
+" Smartindent automatically inserts one extra level of indentation
 set smartindent
 
 " Autoindent copies the indentation from the previous line
@@ -117,7 +117,7 @@ set autoindent
 set bs=2
 
 " set linebreak
-" Start a new line after 72 characters. But not automatically. Use "vip" "gq" for manual linebreak
+" Start a new line after 72 characters. But not automatically. Use "vip" "gq" for manual line break
 set textwidth=72
 set formatoptions-=t
 
@@ -169,6 +169,11 @@ if has("gui_running")
     " match OverLength /\%81v.\+/
     " set colorcolumn=73
 endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" *** Spell check *** """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " *** Plugin configurations *** """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
