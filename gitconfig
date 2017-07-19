@@ -1,5 +1,7 @@
 [user]
 	name = Jan Schmidt
+[core]
+
 [merge]
     tool = gvimdiff
 [diff]
@@ -8,5 +10,14 @@
 	editor = gvim -f
 [push]
     default = upstream
+[color]
+    ui = auto
+[color "branch"]
+    current = cyan
+    remote = yellow
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
 [alias]
     lg = log --graph --decorate --all --format=format:'%C(cyan)%h%C(white): %s %C(dim yellow)%d'
