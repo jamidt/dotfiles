@@ -20,4 +20,6 @@
     changed = yellow bold
     untracked = red bold
 [alias]
-    lg = log --graph --decorate --all --format=format:'%C(cyan)%h%C(white): %s %C(dim yellow)%d'
+    lg1 = log --graph --decorate --all --format=format:'%C(yellow)%h%C(white): %s %C(cyan)%d'
+    lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset) - %C(bold blue)%aD%C(reset) %C(magenta)(%ar)%C(reset)%C(bold cyan)%d%C(reset)%n''           %C(green)%an%C(reset): %C(bold white)%s%C(reset)' --all
+    lg = !"git lg1"
