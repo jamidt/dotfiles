@@ -91,4 +91,10 @@ alias cd..=".."
 
 alias system-update="sudo apt-get update; sudo apt-get upgrade"
 
+alias g++-release="g++ -O2 -march=native -flto -Wall -Wextra -Wpedantic -DNDEBUG"
+alias g++14="g++-release -std=c++14"
+
 export PATH=$HOME/programs/bin:$PATH
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
