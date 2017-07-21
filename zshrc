@@ -81,4 +81,14 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias df="df -h"
+alias du="du -h"
+
+alias mkdir="mkdir -pv"
+
+alias ..="cd .."
+alias cd..=".."
+
+alias system-update="sudo apt-get update; sudo apt-get upgrade"
+
 export PATH=$HOME/programs/bin:$PATH
