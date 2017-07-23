@@ -1,0 +1,84 @@
+#source ~/.mutt/colors/colors.molokai
+set editor="vim -u ~/.mutt/vimrc.mutt"
+
+unset beep
+
+# Do not move mails to other directory
+set move = no
+set smart_wrap
+set sort = 'threads'
+set charset="utf-8"
+set send_charset="utf-8"
+
+set forward_quote=yes
+set fast_reply=yes
+set narrow_tree
+
+unset imap_passive
+set status_on_top
+set imap_keepalive = 300
+set mail_check = 60
+unset markers
+set menu_scroll
+
+# Set format of the index
+#set date_format = "%d %m"
+set date_format = "!%a, %d %b %Y at %H:%M:%S"
+set index_format = "%?M?(#%03M)&(%4l)? [%Z]  %D  %-20.20F   %s"
+set uncollapse_jump
+
+# Status bar appaerance
+set status_chars  = " *%A"
+set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+
+# Open URL in Browser with Ctrl-u
+# Does not work with encrypted mail
+macro pager \Cu "|urlview<enter>" "call urlview to open links"
+
+# Pager settings
+set pager_stop
+set tilde
+set pager_index_lines = 15
+set sort_aux = 'last-date-received'
+
+bind pager k  previous-line
+bind pager j  next-line
+bind pager gg top
+bind pager G  bottom
+bind pager g group-reply
+set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
+
+# Fetch mail
+bind index g imap-fetch-mail
+
+# Settings for contacts
+set query_command="/usr/bin/pc_query -m '%s'"
+bind editor <Tab> complete-query
+
+# Sidebar preferences
+source "~/.mutt/sidebar.mutt"
+
+# Password file
+source "gpg -dq $HOME/.mutt/passwords.mutt.gpg |"
+
+# Treat mail as plain when possible
+alternative_order text/plain text/html
+
+# html settings with w3m
+auto_view text/html
+
+# Encryption settings
+source '~/.mutt/gpg.mutt
+
+#Set Cache
+set header_cache = ~/.cache/mutt/
+#set message_cachedir = "~/.cache/mutt/
+
+# Folder hooks
+folder-hook 'mymail@provider.tt' 'source ~/.mutt/mail-acc/mymailprovider'
+
+source "~/.mutt/mail-acc/mymailprovider"
+
+## Shortcuts
+macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.mutt/mail-acc/mymailprovider<enter><change-folder>!<enter>'
+

@@ -1,0 +1,51 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" *** VIM mail properties *** """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" *** General options *** """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Visual bell. No beeping
+set vb
+set noeb
+
+" Start scrolling befor end of screen reached
+set scrolloff=3
+
+" No shitty swapfile that causes problems
+set nobackup
+set nowb
+set noswapfile
+
+" Disable charset auto-sensing/-detection
+set fileencodings=
+
+" Linebreak after 72 characters
+set linebreak
+set textwidth=72
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" *** Search *** """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Start searching when characters are entered
+set incsearch
+" Highlight search results
+set hlsearch
+" Ignore case when searching...
+set ignorecase
+" ... unless we type capital in the search
+set smartcase
+" Incremental search
+set incsearch
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" *** Visuals ***"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Highlight current line
+set cursorline
+
+" No numbers at the side
+" set relativenumber
+set number
+

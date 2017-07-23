@@ -1,0 +1,16 @@
+# Encryption settings
+
+# Use gpg-agent
+set crypt_use_gpgme=yes
+
+# Support for (obsolete) PGP/INLINE (req Mutt >= 1.5.7)
+message-hook '!(~g|~G) ~b"^-----BEGIN\ PGP\ (SIGNED\ )?MESSAGE"' "exec check-traditional-pgp"
+
+set crypt_autoencrypt=no
+set crypt_autopgp=yes
+set crypt_autosign=no
+set crypt_autosmime=no
+set crypt_replyencrypt=yes
+set crypt_replysign=yes
+set crypt_replysignencrypted=yes
+set crypt_timestamp=yes
