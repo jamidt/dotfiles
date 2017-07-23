@@ -76,10 +76,7 @@ fi
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="$EDITOR ~/.zshrc"
 
 alias df="df -h"
 alias du="du -h"
@@ -94,7 +91,12 @@ alias system-update="sudo apt-get update; sudo apt-get upgrade"
 alias g++-release="g++ -O2 -march=native -flto -Wall -Wextra -Wpedantic -DNDEBUG"
 alias g++14="g++-release -std=c++14"
 
-export PATH=$HOME/programs/bin:$PATH
+
+export GOROOT=$HOME/.local/etc/go
+
+export PATH=$HOME/programs/bin:$HOME/.local/bin:$GOROOT/bin:$PATH
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
