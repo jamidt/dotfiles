@@ -1,5 +1,7 @@
 [user]
 	name = Jan Schmidt
+[core]
+
 [merge]
     tool = gvimdiff
 [diff]
@@ -26,3 +28,6 @@
     diffu = diff-upstream
     difftool-upstream = difftool @{u}
     difftoolu = difftool-upstream
+[pager]
+	show = gvim -R -
+	color = false
