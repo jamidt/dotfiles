@@ -1,5 +1,5 @@
-# Minimal zsh prompt. Most of it taken by gitster theme from the gitster
-# theme by Shashanka Mehta shared under MIT License
+# Minimal zsh prompt. Most of it taken from the gitster theme by
+# Shashanka Mehta shared under MIT License
 # https://github.com/shashankmehta/dotfiles/blob/master/thesetup/zsh/.oh-my-zsh/custom/themes/gitster.zsh-theme
 
 function get_pwd(){
