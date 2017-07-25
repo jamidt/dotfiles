@@ -1,5 +1,6 @@
-from pathlib import Path
 import shutil
+import distutils.dir_util
+import 
 import re
 
 from os.path import expanduser
@@ -43,3 +44,8 @@ with open(home + "/.gitconfig", "r") as gitfile, open("gitconfig", "r") as newgi
 # Zsh
 print("zsh")
 shutil.copy("zshrc", home + "/.zshrc")
+distutils.dir_util.copy_tree("oh-my-zsh", home + "/.oh-my-zsh")
+
+# i3
+print("i3")
+distutils.dir_util.copy_tree("config/i3", home + "/.config/i3")

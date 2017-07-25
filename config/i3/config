@@ -149,6 +149,13 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+new_window normal
+hide_edge_borders vertical
+bindsym $mod+Shift+x [class="^.*"] border toggle
+for_window [class="^.*"] border pixel 1
+#for_window [class="Firefox"] border pixel 0
+for_window [class="Feh"] border pixel 0
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 #bar {
@@ -156,6 +163,10 @@ bindsym $mod+r mode "resize"
 #    tray_output primary
 #}
 
+# lower status bar
 bar {
     status_command i3blocks -c ~/.config/i3/i3block.conf
 }
+
+# background image
+exec --no-startup-id ~/.fehbg
