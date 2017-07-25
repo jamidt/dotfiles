@@ -90,9 +90,17 @@ alias system-update="sudo apt-get update; sudo apt-get upgrade"
 alias g++-release="g++ -O2 -march=native -flto -Wall -Wextra -Wpedantic -DNDEBUG"
 alias g++14="g++-release -std=c++14"
 
-
 export GOROOT=$HOME/.local/etc/go
 
 export PATH=$HOME/programs/bin:$HOME/.local/bin:$GOROOT/bin:$PATH
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+function git-root(){
+    git_root_dir=$(git rev-parse --show-toplevel 2>/dev/null)
+    if [[ -z "$git_root_dir" ]]; then
+        echo "Is NOT git dir"
+    else
+        cd $git_root_dir
+    fi
+}

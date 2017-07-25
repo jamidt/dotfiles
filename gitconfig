@@ -28,6 +28,9 @@
     diffu = diff-upstream
     difftool-upstream = difftool @{u}
     difftoolu = difftool-upstream
+
+    c=commit
+    ca=commit --amend
 [pager]
 	show = gvim -R -
 	color = false
