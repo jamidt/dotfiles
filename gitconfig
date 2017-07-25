@@ -31,3 +31,5 @@
 [pager]
 	show = gvim -R -
 	color = false
+[status]
+	submodulesummary = true
