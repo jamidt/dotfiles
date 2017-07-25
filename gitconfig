@@ -1,5 +1,3 @@
-[user]
-	name = Jan Schmidt
 [core]
 
 [merge]
@@ -7,8 +5,8 @@
 [diff]
     tool = gvimdiff
 [core]
-	editor = gvim -f
-	excludesfile = ~/.gitignore_global
+    editor = gvim -f
+    excludesfile = ~/.gitignore_global
 [push]
     default = upstream
 [color]
@@ -32,7 +30,7 @@
     c=commit
     ca=commit --amend
 [pager]
-	show = gvim -R -
-	color = false
+    show = gvim -R -
+    color = false
 [status]
-	submodulesummary = true
+    submodulesummary = true

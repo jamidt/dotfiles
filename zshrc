@@ -85,7 +85,7 @@ alias du="du -h"
 
 alias mkdir="mkdir -pv"
 
-alias system-update="sudo apt-get update; sudo apt-get upgrade"
+alias system-upgrade="sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get clean"
 
 alias g++-release="g++ -O2 -march=native -flto -Wall -Wextra -Wpedantic -DNDEBUG"
 alias g++14="g++-release -std=c++14"
