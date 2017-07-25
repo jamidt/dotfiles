@@ -1,6 +1,5 @@
 import shutil
 import distutils.dir_util
-import 
 import re
 
 from os.path import expanduser
