@@ -139,8 +139,8 @@ set incsearch
 " Syntax highlighting on
 syntax enable
 
-" Highlight current line
-set cursorline
+" Highlight current line (performance slowdown)
+" set cursorline
 
 " Set numbers at the side
 set relativenumber
