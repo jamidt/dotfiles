@@ -92,7 +92,7 @@ alias g++14="g++-release -std=c++14"
 
 export GOROOT=$HOME/.local/etc/go
 
-export PATH=$HOME/programs/bin:$HOME/.local/bin:$GOROOT/bin:$PATH
+export PATH=$HOME/programs/bin:$HOME/.local/bin:$GOROOT/bin:$HOME/.cargo/bin:$PATH
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
