@@ -34,3 +34,5 @@
     color = false
 [status]
     submodulesummary = true
+[mergetool]
+	keepBackup = false
