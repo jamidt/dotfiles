@@ -194,6 +194,7 @@ bar {
     modifier $mod
     status_command i3blocks -c ~/.config/i3/i3block.conf
 }
+bindsym $mod+m bar mode toggle
 
 # background image
 exec --no-startup-id ~/.fehbg
