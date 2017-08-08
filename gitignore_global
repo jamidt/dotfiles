@@ -1,7 +1,32 @@
+# Logs 
+*.log
+
+# C/CPP
+*.a
+*.o
+*.out
+*.so
+*.dll
+*.obj
+*.exe
+
+# Java
+*.class
+
+# Package
+*.tar
+*.rar
+*.zip
+*.bz2
+*.gz
+*.7z
+*.jar
+
 # Vim
 Session.vim
 *.swp
+*~
 
 # Python
-__pycache__
+__pycache__/
 *.pyc
