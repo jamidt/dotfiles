@@ -21,12 +21,26 @@
 *.gz
 *.7z
 *.jar
+*.iso
 
 # Vim
 Session.vim
 *.swp
 *~
+tags
 
 # Python
 __pycache__/
 *.pyc
+
+# SQL
+*.sql
+*.sqlite
+
+# Linux stuf
+.Trash-*
+.directory
+
+# Just be careful with encryption stuff
+secring.*
+*.gpg

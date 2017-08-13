@@ -83,10 +83,15 @@ alias zshconfig="$EDITOR ~/.zshrc"
 alias df="df -h"
 alias du="du -h"
 
+alias cpr="cp -r"
+
 alias mkdir="mkdir -pv"
+alias mv="mv -i"
+alias cp="cp -i"
 
 alias system-upgrade="sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get clean"
 
+alias g++test="g++ -std=c++14 -O0 -Wall -Wextra -Wpedantic -DDEBUG"
 alias g++-release="g++ -O2 -march=native -flto -Wall -Wextra -Wpedantic -DNDEBUG"
 alias g++14="g++-release -std=c++14"
 
