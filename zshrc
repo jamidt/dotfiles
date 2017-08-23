@@ -109,3 +109,6 @@ function git-root(){
         cd $git_root_dir
     fi
 }
+
+# git stuff
+source ~/.config/git/git-subrepo/.rc

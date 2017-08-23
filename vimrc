@@ -199,7 +199,7 @@ let g:indentLine_color_dark = 1 " (default: 2)
 
 set listchars=tab:▸\ ,eol:¬
 
-let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 
 " clang-format
 map <C-I> :py3f ~/.clang-format/clang-format.py<cr>
