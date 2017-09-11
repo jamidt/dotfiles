@@ -11,6 +11,10 @@
 *.cb
 *.cb2
 
+# beamer
+*.snm
+*.nav
+
 # bibtex/biblatex/biber tmp-files
 *.bbl
 *.bcf

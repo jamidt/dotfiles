@@ -24,7 +24,8 @@
 *.iso
 
 # Vim
-Session.vim
+[Ss]ession.[Vv]im
+[Vv]im.[Ss]ession
 *.swp
 *~
 tags
