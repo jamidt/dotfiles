@@ -45,3 +45,5 @@ __pycache__/
 # Just be careful with encryption stuff
 secring.*
 *.gpg
+id_rsa
+id_rsa.pub
