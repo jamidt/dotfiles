@@ -47,3 +47,6 @@ secring.*
 *.gpg
 id_rsa
 id_rsa.pub
+
+# IDE
+.idea
