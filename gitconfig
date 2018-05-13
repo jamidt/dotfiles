@@ -2,6 +2,7 @@
 
 [merge]
     tool = gvimdiff
+    ff = no
 [diff]
     tool = gvimdiff
 [core]
@@ -36,3 +37,4 @@
     submodulesummary = true
 [mergetool]
 	keepBackup = false
+
